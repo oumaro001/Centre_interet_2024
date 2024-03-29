@@ -1,0 +1,36 @@
+body{
+
+    /*background-color: #2c6aa8*/
+    background-color: black;
+}
+
+
+header{
+    width: 100%;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+}
+
+video{
+    width: 100%;
+}
+
+.container {
+    height: 1000px; /* Hauteur suffisante pour permettre le défilement */
+    overflow-y: scroll; /* Activer le défilement vertical */
+    position: relative; /* Position relative pour positionner l'image */
+    overflow: hidden;
+  }
+  
+  .scroll-content {
+    width: 100%;
+    height: 2000px; /* Double de la hauteur du conteneur pour permettre un défilement significatif */
+  }
+  
+  #scrollImage {
+    position: absolute;
+    left: -600px; /* Position initiale de l'image hors de la vue */
+    transition: left 0.5s ease; /* Animation de transition pour le déplacement */
+  }
+  
