@@ -5,11 +5,23 @@ body{
 }
 
 
+nav a:hover {
+  color: white !important;
+
+}
+
 header{
     width: 100%;
     margin: auto;
     display: flex;
     justify-content: center;
+}
+
+header p{
+
+  font-size: 1.5em;
+  margin: 50px 20px 50px 20px;
+  
 }
 
 video{
@@ -33,4 +45,86 @@ video{
     left: -600px; /* Position initiale de l'image hors de la vue */
     transition: left 0.5s ease; /* Animation de transition pour le déplacement */
   }
-  
+
+  /***********************************************************/
+
+
+
+/* Mixin white-gradient */
+.slider::before,
+.slider::after {
+  content: "";
+  height: 100px;
+  position: absolute;
+  width: 200px;
+  z-index: 2;
+}
+
+/* Keyframes scroll */
+@keyframes scroll {
+  0% {
+      transform: translateX(0);
+  }
+  100% {
+      transform: translateX(calc(-250px * 7));
+  }
+}
+
+/* Styling */
+.slider {
+  background: rgb(0, 0, 0);
+  box-shadow: 0 10px 20px -5px rgba(0, 0, 0, 0.125);
+  height: 400px;
+  margin: auto;
+  overflow: hidden;
+  position: relative;
+  width: 100%;
+}
+
+.slider::after {
+  right: 0;
+  top: 0;
+  transform: rotateZ(180deg);
+}
+
+.slider::before {
+  left: 0;
+  top: 0;
+}
+
+.slide-track {
+  animation: scroll 40s linear infinite;
+  display: flex;
+  width: calc(250px * 14);
+}
+
+
+.slide {
+  height: 300px;
+  width: 600;
+  background-color: rgb(249, 249, 249);
+}
+
+
+.slide img{
+  width: 100%;
+  height: 100%;
+}
+
+/** testeur **/
+.slide_testing {
+  height: 200px;
+  width: 600;
+  background-color: rgb(0, 0, 0);
+  margin: 0 20px;
+}
+
+.slide_testing img{
+  width: 100%;
+  height: 100%;
+}
+
+
+
+
+/************************/
