@@ -96,6 +96,9 @@ video{
   position: relative;
   width: 100%;
   margin-top: -20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .slider::after {
@@ -143,6 +146,11 @@ video{
 }
 
 
+.mangas > .slide_testing > img{
 
+  width: 130px;
+  height: 200px;
+
+}
 
 /************************/
