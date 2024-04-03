@@ -102,6 +102,14 @@ video{
   padding: 0;
 }
 
+
+.slider_programme{
+  
+  background-color: white !important;
+  height: 250px;
+
+}
+
 .slider::after {
   right: 0;
   top: 0;
@@ -114,23 +122,25 @@ video{
 }
 
 .slide-track {
-  animation: scroll 8s 1s linear infinite;
+  animation: scroll 8s 1s linear infinite ;
   display: flex;
   width: calc(250px * 14);
 }
 
 
 .track_testing {
-  animation: scroll 6s linear infinite;
-  display: flex;
+  animation: scroll 10s 2s linear infinite ;
   width: calc(250px * 14);
+  display: flex;
+ 
 }
 
 
 .track_mangas {
   animation: scroll 23s 3s linear infinite;
-  display: flex;
   width: calc(250px * 14);
+  display: flex;
+  
 }
 
 
@@ -138,7 +148,6 @@ video{
 .slide {
   height: 150px;
   width: 600;
-  background-color: rgb(249, 249, 249);
   
 }
 
@@ -146,18 +155,20 @@ video{
 .slide img{ /*  logo des laguages de programmation  */
   width: 170px;
   height: 150px;
+  margin: 0 20px;
 }
 
 /** testeur **/
 .slide_testing {
   height: 100%;
   background-color: rgb(0, 0, 0);
-  margin: 0 20px;
+  margin-left: 20px;
 }
 
 .slide_testing img{
   width: 170px;
   height: 150px;
+  margin:0 15px;
 }
 
 
